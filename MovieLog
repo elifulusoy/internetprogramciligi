@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MovieLOG</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <meta name="theme-color" content="#712cf9">
+    
+    <style>
+        body{
+            background-color: gray;
+        }
+        .card .card-img-top {
+            height: 500px; 
+            object-fit: cover; 
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem
+            }
+        }
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important
+        }
+        .fw-light{
+            color: white;
+        }
+        .text-body-secondary{
+            color: white !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">...</symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">...</symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">...</symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">...</symbol>
+    </svg>
+    
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"> 
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)"> 
+            </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            </ul>
+    </div>
+
+    <header data-bs-theme="dark">
+        </header>
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">MovieLOG</h1>
+                    <p class="lead text-body-secondary">izlediğim filmler</p>
+                    
+                </div>
+            </div>
+        </section>
+        <form class="col-lg-6 mx-auto mt-4">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Film adı veya yönetmen ara...">
+        <button class="btn btn-dark" type="button">Ara</button>
+    </div>
+</form>
+<script>
+    
+</script>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/81Nu7JmZbBL._SY445_.jpg" alt="Star Wars: Revenge of the Sith" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Star Wars: Revenge of the Sith</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#starWarsModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/713kiC-8JhL._AC_UF894,1000_QL80_.jpg" alt="The Grand Budapest Hotel" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">The Grand Budapest Hotel</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#grandBudapestModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col"> 
+                        <div class="card shadow-sm">
+                            <img src="https://www.arthipo.com/image/cache/catalog/poster/movie/759-1554/pfilm1155-schindler-s-list-movie-poster-679x1000.webp" alt="Schindler's List" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Schindler's List</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#schindlersModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/81NC+EA6WNL.jpg" alt="Toy Story 3" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Toy Story 3</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#toyStoryModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://image.tmdb.org/t/p/original/g4JtvGlQO7DByTI6frUobqvSL3R.jpg" alt="Frankenstein(2025)" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Frankenstein(2025)</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#frankensteinModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/81lR4Bm8USL.jpg" alt="Monsters University" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Monsters University</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#monstersModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://m.media-amazon.com/images/I/61PXdxTJGPL.jpg" alt="Inglourious Basterds" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Inglourious Basterds</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#basterdsModal">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <div class="modal fade" id="starWarsModal" tabindex="-1" aria-labelledby="starWarsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="starWarsModalLabel">Star Wars: Revenge of the Sith</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Episode III: Jedi Şövalyesi Anakin Skywalker, Yüce Şansölye Palpatine'in etkisi altına girer ve karanlık tarafa geçer. Bu dönüşüm onu Darth Vader yapar ve Klon Savaşları sona ererken galaksi için trajik bir yıkıma yol açar.
+                    <hr>
+                    <p><strong>Yönetmen:</strong> George Lucas</p>
+                    <p><strong>Süre:</strong> 140 dakika</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">İzle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="grandBudapestModal" tabindex="-1" aria-labelledby="grandBudapestModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="grandBudapestModalLabel">The Grand Budapest Hotel</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Ünlü Kapıcı Gustave H.'nin ve en yakın arkadaşı olan genç lobici Zero Moustafa'nın hikayesi. Lüks oteller, değerli bir Rönesans tablosu ve büyük bir miras kavgasıyla dolu bir macera.
+                    <hr>
+                    <p><strong>Yönetmen:</strong> Wes Anderson</p>
+                    <p><strong>Süre:</strong> 100 dakika</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">İzle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="schindlersModal" tabindex="-1" aria-labelledby="schindlersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="schindlersModalLabel">Schindler's List</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    II. Dünya Savaşı sırasında Polonya'da bir Alman işadamı olan Oskar Schindler'in, kurduğu fabrikalarda çalıştırarak binin üzerinde Yahudi mültecinin hayatını kurtarması.
+                    <hr>
+                    <p><strong>Yönetmen:</strong> Steven Spielberg</p>
+                    <p><strong>Süre:</strong> 195 dakika</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">İzle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="toyStoryModal" tabindex="-1" aria-labelledby="toyStoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="toyStoryModalLabel">Toy Story 3</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Andy üniversiteye gitmek üzeredir ve Woody, Buzz ve oyuncak arkadaşları kendilerini bir kreşte bulurlar. Artık evde olmadıklarını anlayan oyuncaklar, kreşten kaçmak için bir plan yapmak zorundadır.
+                    <hr>
+                    <p><strong>Yönetmen:</strong> Lee Unkrich</p>
+                    <p><strong>Süre:</strong> 103 dakika</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">İzle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="frankensteinModal" tabindex="-1" aria-labelledby="frankensteinModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="frankensteinModalLabel">Frankenstein (2025)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Victor Frankenstein'ın deneyleri ve yarattığı canavarın hikayesini modern bir yorumla anlatan bu yeni yapım, etik sınırları ve insan doğasını sorguluyor.
+                    <hr>
+                    <p><strong>Yönetmen:</strong> Guillermo del Toro </p>
+                    <p><strong>Süre:</strong> 120 dakika</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">İzle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="monstersModal" tabindex="-1" aria-labelledby="monstersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="monstersModalLabel">Monsters University</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Mike Wazowski ve James P. "Sulley" Sullivan'ın, Monsters Üniversitesi'nde nasıl tanıştıklarını ve başlangıçta birbirlerinden hiç hoşlanmamalarına rağmen nasıl en iyi dost olduklarını anlatan bir ön hikaye.
+                    <hr>
+                    <p><strong>Yönetmen:</strong> Dan Scanlon</p>
+                    <p><strong>Süre:</strong> 104 dakika</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">İzle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="basterdsModal" tabindex="-1" aria-labelledby="basterdsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="basterdsModalLabel">Inglourious Basterds</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    II. Dünya Savaşı sırasında, bir grup Yahudi Amerikan askeri, Nazi Almanyası'nın üst düzey liderlerini öldürmek için gizli bir görev yürütür. Bu sırada intikam peşindeki genç bir Yahudi kadın da planını uygulamaya koyar.
+                    <hr>
+                    <p><strong>Yönetmen:</strong> Quentin Tarantino</p>
+                    <p><strong>Süre:</strong> 153 dakika</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">İzle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1"> <a href="#">Back to top</a> </p>
+            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="/docs/5.3/getting-started/introduction">getting started guide</a>.</p>
+        </div>
+    </footer>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
